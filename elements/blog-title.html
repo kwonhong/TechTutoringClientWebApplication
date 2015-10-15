@@ -1,0 +1,69 @@
+
+<!-- List of dependencies! -->
+<link href="../bower_components/polymer/polymer.html" rel="import">
+
+<!-- Actual Module Implementation -->
+<dom-module id="blog-title">
+<style type="text/css">
+  .underLine {
+    width: 90%;
+    height: 5px;
+    margin-bottom: 50px;
+  }
+
+  @font-face {
+    font-family: RobotoBold;
+    src: url(../bower_components/Materialize/font/roboto/Roboto-Medium.woff);
+  }
+
+  @font-face {
+    font-family: RobotoRegular;
+    src: url(../bower_components/Materialize/font/roboto/Roboto-Regular.woff);
+  }
+
+  .titleText {
+    font-family: RobotoBold;
+    margin-bottom: 5px;
+  }
+
+  .date {
+    margin-left: 10px;
+    font-family: RobotoRegular;
+  }
+
+  .authorName {
+    margin-left: 3px;
+  }
+
+</style>
+<template>
+    <h2 class="titleText">{{titleText}}</h2>
+    <span class="grey-text lighten-2"><i>With</i></span>
+    <span class="authorName red-text lighten-2">{{authorName}}</span>
+    <span class="date grey-text lighten-1"><i>{{date}}</i></span>
+    <div class="red lighten-4 underLine">&nbsp;</div>
+</template>
+</dom-module>
+
+<!-- Variables Definitions & Javascript -->
+<script>
+  Polymer({
+    // Registering Event
+    is: "blog-title", 
+
+    // Variables
+    properties: {
+      titleText: String,
+      authorName: {
+        type: String,
+        value: "Unknown"
+      },
+      date: {
+        type: String,
+        value: "15 Octoboer, 2015"
+      }
+    }
+  });
+</script>
+
+

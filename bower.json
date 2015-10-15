@@ -1,0 +1,25 @@
+{
+  "name": "MaterialDesign",
+  "version": "0.0.0",
+  "authors": [
+    "Kwon",
+    "James <honkwon@ebay.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#~0.97.1",
+    "polymer": "Polymer/polymer#^1.0.0",
+    "google-youtube": "GoogleWebComponents/google-youtube#~1.1.2"
+  }
+}
