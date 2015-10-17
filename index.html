@@ -6,31 +6,24 @@
 	<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
 
+	<link href="bower_components/Materialize/sass/materialize.css" rel="stylesheet">
 
-	<link href="elements/blog-paragraph.html" rel="import">
-	<link href="elements/blog-title.html" rel="import">
-	<link href="elements/blog-video.html" rel="import">
-	<link href="elements/blog-header.html" rel="import">
+
+	<link href="elements/navElements/nav-top.html" rel="import">
+	<link href="elements/blogElements/blog-paragraph.html" rel="import">
+	<link href="elements/blogElements/blog-title.html" rel="import">
+	<link href="elements/blogElements/blog-video.html" rel="import">
+	<link href="elements/blogElements/blog-header.html" rel="import">
+	<link href="elements/blogElements/blog-code.html" rel="import">
 </head>
 <body>
+	<nav-top></nav-top>
 
-	<nav>
-		<div class="nav-wrapper">
-			<a href="#!" class="brand-logo">Logo</a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<!-- Dropdown Trigger -->
-				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-			</ul>
-		</div>
-	</nav>
 	<div class="container">
 	<div class="row">
 	<div class="col s8">
@@ -42,6 +35,7 @@
 		<blog-paragraph paragraph-text="Currying is a feature found in most modern programming languages. It translates a single function with multiple arguments into a series of functions each with one argument. In essence, this enables for storing functions in variables and creating functions that return functions."></blog-paragraph>
 		<blog-header header-text="1. Function Currying with Classes"></blog-header>
 		<blog-paragraph paragraph-text="Before defining our own custom functions, I am first going to show you a simple example of currying in Swift using classes."></blog-paragraph>
+		<blog-code code-text="p { color: red }" code-type="language-css"></blog-code>
 		
 
 	</div>

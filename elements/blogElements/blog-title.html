@@ -1,6 +1,7 @@
 
 <!-- List of dependencies! -->
-<link href="../bower_components/polymer/polymer.html" rel="import">
+<link href="../../bower_components/polymer/polymer.html" rel="import">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- Actual Module Implementation -->
 <dom-module id="blog-title">
@@ -13,12 +14,12 @@
 
   @font-face {
     font-family: RobotoBold;
-    src: url(../bower_components/Materialize/font/roboto/Roboto-Medium.woff);
+    src: url(../../bower_components/Materialize/font/roboto/Roboto-Medium.woff);
   }
 
   @font-face {
     font-family: RobotoRegular;
-    src: url(../bower_components/Materialize/font/roboto/Roboto-Regular.woff);
+    src: url(../../bower_components/Materialize/font/roboto/Roboto-Regular.woff);
   }
 
   .titleText {
@@ -27,19 +28,29 @@
   }
 
   .date {
-    margin-left: 10px;
     font-family: RobotoRegular;
+    padding-top: 0px;
+    margin-top: 0px;
   }
 
   .authorName {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     margin-left: 3px;
+    margin-right: 10px;
+  }
+
+  .authorIcon {
+    margin-bottom: 0px;
   }
 
 </style>
 <template>
     <h2 class="titleText">{{titleText}}</h2>
-    <span class="grey-text lighten-2"><i>With</i></span>
+    
+    <i class="Tiny material-icons">perm_identity</i>
     <span class="authorName red-text lighten-2">{{authorName}}</span>
+    <i class="Tiny material-icons">av_timer</i>
     <span class="date grey-text lighten-1"><i>{{date}}</i></span>
     <div class="red lighten-4 underLine">&nbsp;</div>
 </template>
